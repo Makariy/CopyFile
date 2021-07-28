@@ -1,0 +1,10 @@
+<config>
+    <file source_path="C:\Users\makar\PycharmProjects\CopyFile\conf"
+          destination_path="C:\Users\makar\PycharmProjects\CopyFile"
+          file_name="config.xml"
+    />
+    <file source_path="C:\Users\makar\PycharmProjects\CopyFile"
+          destination_path="C:\Users\makar\PycharmProjects\CopyFile\conf"
+          file_name="main.py"
+    />
+</config>
