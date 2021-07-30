@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 class ConfigParser:
     def __init__(self, file_name='conf/config.xml', config_tag='config', tag='file'):
         self.tree = ET.parse(file_name)
-        if self.tree.getroot().tag == 'config':
+        if self.tree.getroot().tag == config_tag:
             self.config = self.tree
         else:
             self.config = self.tree.find(config_tag)
