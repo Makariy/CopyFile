@@ -26,8 +26,8 @@ class CopyFile:
     def copy_file(self, file):
         try:
             settings = self.get_settings(file)
-            with open(settings['source_path'] + '\\' + settings['file_name'], 'r') as file_from:
-                with open(settings['destination_path'] + '\\' + settings['file_name'], 'w') as file_to:
+            with open(settings['source_path'] + '\\' + settings['file_name'], 'rb') as file_from:
+                with open(settings['destination_path'] + '\\' + settings['file_name'], 'wb') as file_to:
                     file_to.write(file_from.read())
 
         except KeyError as ke:
